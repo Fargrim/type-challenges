@@ -10,4 +10,8 @@ type cases = [
 type error = If<null, 'a', 'b'>
 
 // ============= Your Code Here =============
+/*
+* Not much to say about this one. Once I realized I could "extend true"
+* just by trying it, the solution was straight-forward.
+*/
 type If<C extends boolean, T, F> = C extends true ? T : F
